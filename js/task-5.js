@@ -14,6 +14,8 @@ btnChange.addEventListener("click", (changeColorBtn) => {
   const newColor = getRandomHexColor();
   spanChangeColor.style.backgroundColor = newColor;
   bodyChangeColor.style.backgroundColor = newColor;
-  // console.log(spanChangeColor);
-  // console.log(bodyChangeColor);
 });
+
+
+// console.log(spanChangeColor);
+// console.log(bodyChangeColor);

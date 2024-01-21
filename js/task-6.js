@@ -40,6 +40,6 @@ destroyBtn.addEventListener("click", (e) => {
   containerBlock.innerHTML = "";
 });
 
-console.log(createBtn);
-console.log(destroyBtn);
-console.log(inputNumber);
+// console.log(createBtn);
+// console.log(destroyBtn);
+// console.log(inputNumber);
