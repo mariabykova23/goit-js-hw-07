@@ -8,17 +8,16 @@ formEl.addEventListener("submit", (submitBtnForm) => {
   const formData = submitBtnForm.target;
   const userEmail = formData.elements.email.value.trim();
   const userPassword = formData.elements.password.value.trim();
+  const userEmailKey = formData.elements.email.name;
+  const userPasswordKey = formData.elements.password.name;
 
-  if (
-    formEl.email.value === "" ||
-    formEl.password.value === "" ||
-    formEl.email.value === " " ||
-    formEl.password.value === " "
-  ) {
+  if (userEmail === "" || userPassword === "") {
     alert("All form fields must be filled in");
   }
 
-  console.log(`Email: ${userEmail}, Passwords: ${userPassword}`);
+  console.log(
+    `${userEmailKey}: ${userEmail}, ${userPasswordKey}: ${userPassword}`
+  );
   formData.reset();
 });
 

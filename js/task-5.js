@@ -10,12 +10,11 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-btnChange.addEventListener("click", (changeColorBtn) => {
+btnChange.addEventListener("click", (e) => {
   const newColor = getRandomHexColor();
-  spanChangeColor.style.backgroundColor = newColor;
+  spanChangeColor.textContent = newColor;
   bodyChangeColor.style.backgroundColor = newColor;
 });
-
 
 // console.log(spanChangeColor);
 // console.log(bodyChangeColor);
